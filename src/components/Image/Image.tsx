@@ -1,6 +1,6 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React, { SFC } from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,7 +13,13 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const Image = () => (
+type ImageProps = {
+  name: string
+  alt: string
+  className?: string
+}
+
+const Image: SFC<ImageProps> = ({ alt, className }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -26,7 +32,14 @@ const Image = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => (
+      <Img
+        alt={alt}
+        className={className}
+        fluid={data.placeholderImage.childImageSharp.fluid}
+      />
+    )}
   />
 )
+
 export default Image
