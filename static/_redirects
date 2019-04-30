@@ -1,10 +1,10 @@
 # These rules will change if you change your site’s custom domains or HTTPS settings
 
 # Redirect domain aliases to primary domain
-https://praeg-studio.dk/* https://praegstudio.dk/:splat 301!
-https://www.praeg-studio.dk/* https://praegstudio.dk/:splat 301!
-https://xn--prgstudio-h3a.dk/* https://praegstudio.dk/:splat 301!
-https://www.xn--prgstudio-h3a.dk/* https://praegstudio.dk/:splat 301!
+https://praeg-studio.dk/* https://xn--prgstudio-h3a.dk/:splat 301!
+https://www.praeg-studio.dk/* https://xn--prgstudio-h3a.dk/:splat 301!
+https://praegstudio.dk/* https://xn--prgstudio-h3a.dk/:splat 301!
+https://www.xn--prgstudio-h3a.dk/* https://xn--prgstudio-h3a.dk/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
-https://madsmikkelsen.netlify.com/* https://praegstudio.dk/:splat 301!
+https://madsmikkelsen.netlify.com/* https://xn--prgstudio-h3a.dk/:splat 301!
