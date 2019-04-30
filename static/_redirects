@@ -3,6 +3,8 @@
 # Redirect domain aliases to primary domain
 https://praeg-studio.dk/* https://praegstudio.dk/:splat 301!
 https://www.praeg-studio.dk/* https://praegstudio.dk/:splat 301!
+https://xn--prgstudio-h3a.dk/* https://praegstudio.dk/:splat 301!
+https://www.xn--prgstudio-h3a.dk/* https://praegstudio.dk/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://madsmikkelsen.netlify.com/* https://praegstudio.dk/:splat 301!
