@@ -10,7 +10,7 @@ import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 type SEOProps = {
-  title: string
+  title?: string
   description?: string
   lang?: string
   keywords?: string[]
@@ -35,6 +35,7 @@ const SEO: SFC<SEOProps> = ({ description, lang, meta, keywords, title }) => {
     `
   )
 
+  const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
 
   return (
@@ -42,7 +43,7 @@ const SEO: SFC<SEOProps> = ({ description, lang, meta, keywords, title }) => {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={metaTitle}
       titleTemplate={'%s | ${site.siteMetadata.title}'}
       meta={[
         {
@@ -51,7 +52,7 @@ const SEO: SFC<SEOProps> = ({ description, lang, meta, keywords, title }) => {
         },
         {
           property: 'og:title',
-          content: title,
+          content: metaTitle,
         },
         {
           property: 'og:description',
@@ -71,7 +72,7 @@ const SEO: SFC<SEOProps> = ({ description, lang, meta, keywords, title }) => {
         },
         {
           name: 'twitter:title',
-          content: title,
+          content: metaTitle,
         },
         {
           name: 'twitter:description',
