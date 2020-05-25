@@ -1,0 +1,39 @@
+.project-thumbnail {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+
+  .gatsby-image-wrapper {
+    height: 100%;
+  }
+
+  img {
+    margin-bottom: 0;
+  }
+}
+
+.project-thumbnail__info {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(3rem);
+  transition: all 0.2s ease;
+
+  .project-thumbnail:hover & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-thumbnail__title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.project-thumbnail__description {
+  margin: 0;
+}

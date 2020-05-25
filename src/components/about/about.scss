@@ -1,0 +1,18 @@
+.about {
+  padding: 10rem 2rem;
+  margin: 10rem auto;
+  background-color: #f8f8f8;
+
+  h1 {
+    font-weight: bold;
+  }
+}
+
+.about__container {
+  margin: 0 auto;
+  max-width: 700px;
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+}
