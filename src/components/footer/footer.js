@@ -2,12 +2,13 @@ import React from "react"
 import { ContactBlock } from "../contact-block"
 
 export const Footer = props => (
-  <footer id="contact">
-    <ContactBlock
+  <footer>
+    <h4>Præg Studio</h4>
+    <span>Ballevej 1C, 8600 Silkeborg</span>
+    <a href="tel:+45 23 87 22 92">+45 23 87 22 92</a>
+    <a href="mailto:mads@praegstudio.dk">mads@praegstudio.dk</a>
+    {/* <ContactBlock
       name="Præg Studio"
-      address="Ballevej 1C, 8600 Silkeborg"
-      phone="+45 23 87 22 92"
-      email="mads@praegstudio.dk"
       primary
     />
     {props.showPeople && (
@@ -30,6 +31,6 @@ export const Footer = props => (
           email="mads@praegstudio.dk"
         />
       </div>
-    )}
+    )} */}
   </footer>
 )

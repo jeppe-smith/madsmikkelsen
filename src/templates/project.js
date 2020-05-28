@@ -55,26 +55,28 @@ export default function Template({ data }) {
             const orientation = getOrientation(
               image.childImageSharp.fluid.aspectRatio
             )
+            const aspectRatio = orientation === "landscape" ? 4 / 3 : 4 / 6
 
             return (
-              <button
+              <div
                 type="button"
-                className={orientation}
+                className={`${orientation} ${aspectRatio}`}
                 onClick={handleOpen(index)}
                 style={{
-                  border: 0,
-                  outline: 0,
-                  background: "transparent",
-                  padding: 0,
+                  // border: 0,
+                  // outline: 0,
+                  // background: "transparent",
+                  // padding: 0,
                   cursor: "pointer",
                 }}
               >
                 <ImgWithOrient
                   key={index}
                   fluid={image.childImageSharp.fluid}
+                  sizes={{ ...image.childImageSharp.fluid, aspectRatio }}
                   aspectRatio={image.childImageSharp.fluid.aspectRatio}
                 />
-              </button>
+              </div>
             )
           })}
         </Gallery>

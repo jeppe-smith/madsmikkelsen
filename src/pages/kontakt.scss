@@ -1,0 +1,62 @@
+.contact-page {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2rem;
+  margin: 2rem;
+  max-width: 1200px;
+}
+
+.company-desc {
+  grid-column: auto / span 8;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border: 2px solid #eee;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-title {
+  grid-column: 1 / span 12;
+}
+
+.company {
+  grid-column: auto / span 4;
+  padding: 2rem;
+  // border: 2px solid #eee;
+  background-color: #eee;
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p,
+  a {
+    display: block;
+    margin: 0.25rem 0;
+    color: inherit;
+  }
+
+  p + a {
+    margin-top: 2rem;
+  }
+}
+
+.person {
+  grid-column: auto / span 4;
+  padding: 2rem;
+  background-color: #eee;
+  // border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  a {
+    margin: 0.25rem 0;
+    color: inherit;
+  }
+}

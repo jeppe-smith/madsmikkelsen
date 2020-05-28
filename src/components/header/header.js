@@ -21,28 +21,21 @@ export const Header = () => {
         <Logo className="header__logo" />
       </Link>
       <div className={`menu ${isMenuOpen ? "is-open" : ""}`}>
-        <a
+        <Link
           className="menu__link"
           onClick={() => setMenuIsOpen(false)}
-          href="/#projects"
+          to="/"
         >
           Projekter
-        </a>
+        </Link>
         {/* <a className="menu__link" onClick={() => setMenuIsOpen(false)}>Boligkøb i Blinde</a> */}
-        <a
+        <Link
           className="menu__link"
           onClick={() => setMenuIsOpen(false)}
-          href="/#about"
-        >
-          Om Præg Studio
-        </a>
-        <a
-          className="menu__link"
-          onClick={() => setMenuIsOpen(false)}
-          href="/#contact"
+          to="/kontakt"
         >
           Kontakt
-        </a>
+        </Link>
       </div>
       {!isMenuOpen && (
         <MenuIcon
