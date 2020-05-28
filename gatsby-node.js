@@ -2,10 +2,13 @@
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
-  const projectTemplate = require.resolve(`./src/templates/projectTemplate.js`)
+  const projectTemplate = require.resolve(`./src/templates/project.js`)
   const result = await graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      allMarkdownRemark(
+        sort: { order: ASC, fields: [frontmatter___order] }
+        limit: 1000
+      ) {
         edges {
           node {
             frontmatter {
