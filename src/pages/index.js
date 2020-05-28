@@ -62,7 +62,6 @@ const IndexPage = props => (
         Kontakt os i dag
       </Link>
     </div>
-    <Footer />
   </Layout>
 )
 
