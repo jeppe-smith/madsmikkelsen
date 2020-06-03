@@ -7,7 +7,6 @@ import PageTitle from "../../components/PageTitle"
 import TVProject from "../../components/TVProject"
 import { graphql } from "gatsby"
 
-// prettier-ignore
 export const pageQuery = graphql`
   query TVImages {
     cm: allFile(
