@@ -3,10 +3,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Gallery } from "../components/gallery"
-import { About } from "../components/about"
-import { Footer } from "../components/footer"
 import { ProjectThumbnail } from "../components/project-thumbnail"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { getOrientation } from "../utils/getOrientation"
 
 export const pageQuery = graphql`

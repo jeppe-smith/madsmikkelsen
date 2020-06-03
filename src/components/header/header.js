@@ -28,7 +28,13 @@ export const Header = () => {
         >
           Projekter
         </Link>
-        {/* <a className="menu__link" onClick={() => setMenuIsOpen(false)}>Boligkøb i Blinde</a> */}
+        <Link
+          className="menu__link"
+          to="/boligkøb-i-blinde"
+          onClick={() => setMenuIsOpen(false)}
+        >
+          Boligkøb i Blinde
+        </Link>
         <Link
           className="menu__link"
           onClick={() => setMenuIsOpen(false)}
