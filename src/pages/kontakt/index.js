@@ -9,7 +9,7 @@ import Img from "gatsby-image"
 export const pageQuery = graphql`
   query {
     flemming: file(
-      relativePath: { eq: "people/flemming.jpg" }
+      relativePath: { eq: "people/flemming-bw.jpg" }
       sourceInstanceName: { eq: "images" }
     ) {
       childImageSharp {
@@ -19,7 +19,7 @@ export const pageQuery = graphql`
       }
     }
     mads: file(
-      relativePath: { eq: "people/mads.jpg" }
+      relativePath: { eq: "people/mads-bw.jpg" }
       sourceInstanceName: { eq: "images" }
     ) {
       childImageSharp {
@@ -29,7 +29,7 @@ export const pageQuery = graphql`
       }
     }
     martin: file(
-      relativePath: { eq: "people/martin.jpg" }
+      relativePath: { eq: "people/martin-bw.jpg" }
       sourceInstanceName: { eq: "images" }
     ) {
       childImageSharp {
