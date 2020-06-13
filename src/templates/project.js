@@ -1,12 +1,11 @@
+import "./project.scss"
+
 import React, { useState } from "react"
 import { graphql } from "gatsby"
 import { ImgWithOrient } from "../components/image"
 import { Gallery } from "../components/gallery"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-import "./project.scss"
-import { Footer } from "../components/footer"
 import Lightbox from "../components/lightbox"
 import { getOrientation } from "../utils/getOrientation"
 
@@ -52,6 +51,11 @@ export default function Template({ data }) {
         </div>
         <Gallery>
           {frontmatter.images.map((image, index) => {
+            if (!image) {
+              console.log(index)
+              return null
+            }
+
             const orientation = getOrientation(
               image.childImageSharp.fluid.aspectRatio
             )
@@ -63,10 +67,6 @@ export default function Template({ data }) {
                 className={`${orientation} ${aspectRatio}`}
                 onClick={handleOpen(index)}
                 style={{
-                  // border: 0,
-                  // outline: 0,
-                  // background: "transparent",
-                  // padding: 0,
                   cursor: "pointer",
                 }}
               >
