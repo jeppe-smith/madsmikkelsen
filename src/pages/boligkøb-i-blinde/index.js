@@ -98,7 +98,6 @@ export const pageQuery = graphql`
 `
 
 const TVPage = props => {
-  console.log(props)
   return (
     <Layout>
       <SEO
