@@ -48,12 +48,16 @@ const ContactPage = props =>
       <div className="contact-page">
         <PageTitle title="Præg Studio">
           <p>
-            PrægStudio er stiftet af Constructing Architect Mads K. Mikkelsen i
-            2015, drevet af passion for personlig arkitektur, der fungerer og
-            lever. I materialer, der forfører dig i dag og bekræfter dine valg i
-            morgen. PRÆG studio’s projekter er karakteriseret af et blik for
-            materialet, funktion og bygherres personlighed, baseret på knap 20
-            års erfaring fra byggeri, design og arkitektur.
+            Præg Studio, beliggende i Silkeborg, blev i 2015 stiftet af Mads
+            Kappel Mikkelsen. Tegnestuen løser alle former for byggeprojekter-
+            spændende fra mindre tilbygninger, renoveringer til større komplekse
+            villaer - primært for private kunder. Med udgangspunkt i kundernes
+            ønsker og økonomi ser vi det som vores fornemmeste opgave, at
+            omsætte dette til arkitektoniske, brugbare og langtidsholdbare
+            løsninger af høj kvalitet. Tegnestuen som er i stadig vækst, har i
+            dag 4 ansatte og byggeopgaver over hele landet. Mads Mikkelsen har
+            udover, at drive tegnestuen, medvirket som ”arkitekt/ekspert” i
+            boligprogrammet “Boligkøb i blinde“.
           </p>
           <p>
             <span>Ballevej 1C, 8600 Silkeborg</span> |{" "}
