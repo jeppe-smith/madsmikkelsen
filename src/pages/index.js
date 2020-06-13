@@ -55,11 +55,6 @@ const IndexPage = props => (
         </Link>
       ))}
     </Gallery>
-    <div style={{ textAlign: "center" }}>
-      <Link to="/kontakt" className="fancy-button">
-        Kontakt os i dag
-      </Link>
-    </div>
   </Layout>
 )
 
