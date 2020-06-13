@@ -90,7 +90,6 @@ export default function Template({ data }) {
           />
         )}
       </div>
-      <Footer />
     </Layout>
   )
 }
