@@ -52,7 +52,6 @@ export default function Template({ data }) {
         <Gallery>
           {frontmatter.images.map((image, index) => {
             if (!image) {
-              console.log(index)
               return null
             }
 
@@ -63,7 +62,6 @@ export default function Template({ data }) {
 
             return (
               <div
-                type="button"
                 className={`${orientation} ${aspectRatio}`}
                 onClick={handleOpen(index)}
                 style={{
