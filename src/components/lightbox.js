@@ -30,6 +30,7 @@ const Lightbox = ({
       onCloseRequest={handleClose}
       onMovePrevRequest={handlePrevRequest(selectedImage, array.length)}
       onMoveNextRequest={handleNextRequest(selectedImage, array.length)}
+      wrapperClassName="custom-lightbox"
     />
   )
 }

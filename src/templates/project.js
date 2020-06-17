@@ -63,6 +63,7 @@ export default function Template({ data }) {
             return (
               <div
                 className={`${orientation} ${aspectRatio}`}
+                key={index}
                 onClick={handleOpen(index)}
                 style={{
                   cursor: "pointer",
@@ -80,6 +81,7 @@ export default function Template({ data }) {
         </Gallery>
         {showLightbox && selectedImage !== null && (
           <Lightbox
+            wrapperClassName="dav"
             images={frontmatter.images}
             handleClose={handleClose}
             handleNextRequest={handleNextRequest}

@@ -705,3 +705,7 @@ a {
   margin-top: 200px;
   display: inline-block;
 }
+
+.custom-lightbox img {
+  object-fit: contain !important;
+}
