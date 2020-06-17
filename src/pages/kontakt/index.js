@@ -82,7 +82,7 @@ const ContactPage = props => (
         <div className="person">
           <Img fluid={props.data.martin.childImageSharp.fluid} />
           <h4>Martin Elnegaard Hansen</h4>
-          <em>Arkitekt, praktikant</em>
+          <em>BA. Architect, tømrer</em>
           <a href="tel:+45 23 87 22 92">+45 23 87 22 92</a>
           <a href="mailto:martin@praegstudio.dk">martin@praegstudio.dk</a>
         </div>
