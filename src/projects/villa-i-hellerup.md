@@ -1,9 +1,9 @@
 ---
 slug: "/villa-i-hellerup"
-order: 99
+order: 3
 title: "Villa i Hellerup"
 description: "Total om- og tilbygning af en knap 140 år gammel villa i Hellerup"
-thumbnail: "../images/villa-i-hellerup/front-venstre.jpg"
+thumbnail: "../images/villa-i-hellerup/terrasse.jpg"
 tags:
   - "renovering"
   - "kobbertag"

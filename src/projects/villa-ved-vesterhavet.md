@@ -1,6 +1,6 @@
 ---
 slug: "/villa-ved-vesterhavet"
-order: 99
+order: 2
 title: "Villa ved vesterhavet"
 description: "Gennemgribende, nænsom transformation af privat villa"
 thumbnail: "../images/villa-ved-vesterhavet/pool.jpg"

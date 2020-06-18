@@ -1,6 +1,6 @@
 ---
 slug: "/villa-i-silkeborg-renovering"
-order: 99
+order: 5
 title: "Renovering og ombygning af villa i Silkeborg"
 description: "Totalrenovering af villa fra 1969 på kuperet grund med søudsigt"
 thumbnail: "../images/villa-i-silkeborg-renovering/MADS0711.jpg"

@@ -1,9 +1,9 @@
 ---
 slug: "/villa-i-søhøjlandet"
-order: 99
+order: 4
 title: "Villa i søhøjlandet"
 description: "Villa på vestvendt og helt unik søgrund"
-thumbnail: "../images/villa-i-søhøjlandet/interiør-gipsloft.jpg"
+thumbnail: "../images/villa-i-søhøjlandet/fra-vejen.jpg"
 tags:
   - "træhus"
   - "egetræ"

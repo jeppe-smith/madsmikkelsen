@@ -1,6 +1,6 @@
 ---
 slug: "/villa-i-ikast"
-order: 99
+order: 10
 title: "Villa i Ikast"
 description: "Ombygning af 1. sal i privat villa… -som aldrig var taget i brug"
 thumbnail: "../images/villa-i-ikast/gennemgang.jpg"

@@ -1,6 +1,6 @@
 ---
 slug: "/suderbækgård-nye-avlsbygninger"
-order: 99
+order: 9
 title: "Suderbækgård - nye avlsbygninger"
 description: "Genetablering af staldbygninger til nye formål i ikast"
 thumbnail: "../images/suderbækgård-nye-avlsbygninger/sal-lys.jpg"

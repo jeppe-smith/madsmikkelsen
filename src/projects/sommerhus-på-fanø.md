@@ -1,6 +1,6 @@
 ---
 slug: "/sommerhus-på-fanø"
-order: 99
+order: 1
 title: "Sommerhus på Fanø"
 description: "Nyt fritidshus på skrånende grund, med vanskelig solretning."
 thumbnail: "../images/sommerhus-på-fanø/planer.jpg"

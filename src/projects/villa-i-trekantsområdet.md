@@ -1,9 +1,9 @@
 ---
 slug: "/villa-i-trekantsområdet"
-order: 99
+order: 11
 title: "Villa i trekantsområdet"
 description: "Etapevis renovering af privat villa"
-thumbnail: "../images/villa-i-trekantsområdet/badeværelse.jpg"
+thumbnail: "../images/villa-i-trekantsområdet/orangeri-trappe.jpg"
 tags:
   - "renovering"
   - "badeværelse"

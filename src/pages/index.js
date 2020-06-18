@@ -9,7 +9,10 @@ import { getOrientation } from "../utils/getOrientation"
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___order] }
+      limit: 1000
+    ) {
       edges {
         node {
           id

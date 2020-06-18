@@ -1,9 +1,9 @@
 ---
 slug: "/villa-ved-limfjorden"
-order: 99
+order: 6
 title: "Villa ved limfjorden"
 description: "Villa på nordlig strandgrund"
-thumbnail: "../images/villa-ved-limfjorden/fjordside.jpg"
+thumbnail: "../images/villa-ved-limfjorden/ankomst.jpg"
 tags:
   - "kolumba"
   - "tegl"

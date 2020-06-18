@@ -1,9 +1,9 @@
 ---
 slug: "/villa-i-silkeborg"
-order: 99
+order: 7
 title: "Villa i Silkeborg"
 description: "Renovering af privat villa"
-thumbnail: "../images/villa-i-silkeborg/køkken.jpg"
+thumbnail: "../images/villa-i-silkeborg/køkkenø.jpg"
 tags:
   - "Byg & Design"
   - "snedkerkøkken"
