@@ -60,8 +60,8 @@ const ContactPage = props => (
         </p>
         <p>
           <span>Ballevej 1C, 8600 Silkeborg</span> |{" "}
-          <a href="tel:+45 23 87 22 92">+45 23 87 22 92</a> |{" "}
-          <a href="mailto:mads@praegstudio.dk">mads@praegstudio.dk</a>
+          <a href="tel:+4525120166">+45 25 12 01 66</a> |{" "}
+          <a href="mailto:mads@praegstudio.dk">info@praegstudio.dk</a>
         </p>
       </PageTitle>
       <div className="person-list">
@@ -83,7 +83,7 @@ const ContactPage = props => (
           <Img fluid={props.data.martin.childImageSharp.fluid} />
           <h4>Martin Elnegaard Hansen</h4>
           <em>BA. Architect, tømrer</em>
-          <a href="tel:+45 23 87 22 92">+45 23 87 22 92</a>
+          <a href="tel:+4530286256">+45 30 28 62 56</a>
           <a href="mailto:martin@praegstudio.dk">martin@praegstudio.dk</a>
         </div>
       </div>
