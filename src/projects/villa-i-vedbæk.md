@@ -1,7 +1,7 @@
 ---
 slug: "/villa-i-vedbæk"
 order: 8
-title: 'Villa i vedbæk - "Amarican Colonial"'
+title: 'Villa i Vedbæk - "Amarican Colonial"'
 description: "Detailløsninger i ny villa i Vedbæk"
 thumbnail: "../images/villa-i-vedbæk/køkken.jpg"
 tags:

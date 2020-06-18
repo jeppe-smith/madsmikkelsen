@@ -1,7 +1,7 @@
 ---
 slug: "/villa-ved-limfjorden"
 order: 6
-title: "Villa ved limfjorden"
+title: "Villa ved Limfjorden"
 description: "Villa på nordlig strandgrund"
 thumbnail: "../images/villa-ved-limfjorden/ankomst.jpg"
 tags:

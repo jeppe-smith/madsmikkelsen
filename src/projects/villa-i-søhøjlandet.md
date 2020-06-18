@@ -1,7 +1,7 @@
 ---
 slug: "/villa-i-søhøjlandet"
 order: 4
-title: "Villa i søhøjlandet"
+title: "Villa i Søhøjlandet"
 description: "Villa på vestvendt og helt unik søgrund"
 thumbnail: "../images/villa-i-søhøjlandet/fra-vejen.jpg"
 tags:

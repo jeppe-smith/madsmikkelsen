@@ -1,7 +1,7 @@
 ---
 slug: "/villa-i-trekantsområdet"
 order: 11
-title: "Villa i trekantsområdet"
+title: "Villa i Trekantsområdet"
 description: "Etapevis renovering af privat villa"
 thumbnail: "../images/villa-i-trekantsområdet/orangeri-trappe.jpg"
 tags:

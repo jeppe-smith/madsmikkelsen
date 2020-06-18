@@ -1,7 +1,7 @@
 ---
 slug: "/sommerhus-ved-vesterhavet"
 order: 12
-title: "Sommerhus ved vesterhavet"
+title: "Sommerhus ved Vesterhavet"
 description: "Sommerhus med plads til to familier"
 thumbnail: "../images/sommerhus-ved-vesterhavet/køkken.jpg"
 tags:
