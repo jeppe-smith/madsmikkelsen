@@ -37,10 +37,7 @@ export const pageQuery = graphql`
 
 const IndexPage = props => (
   <Layout>
-    <SEO
-      title="Forside"
-      metaDescription="PrægStudio er drevet af passion for personlig arkitektur, der fungerer og lever. I materialer, der forfører dig i dag og bekræfter dine valg i morgen."
-    />
+    <SEO />
     <Gallery>
       {props.data.allMarkdownRemark.edges.map((edge, index) => (
         <Link

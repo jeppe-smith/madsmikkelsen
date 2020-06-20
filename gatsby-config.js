@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    name: `Præg Studio`,
     title: `Præg Studio v/ Mads Kappel Mikkelsen`,
     description: `PrægStudio er drevet af passion for personlig arkitektur, der fungerer og lever. I materialer, der forfører dig i dag og bekræfter dine valg i morgen.`,
     author: `Mads Kappel Mikkelsen <mads@praegstudio.dk>`,

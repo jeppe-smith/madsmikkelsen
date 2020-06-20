@@ -69,14 +69,14 @@ const ContactPage = props => (
           <Img fluid={props.data.mads.childImageSharp.fluid} />
           <h4>Mads Kappel Mikkelsen</h4>
           <em>Arkitekt, ejer</em>
-          <a href="tel:+45 23 87 22 92">+45 23 87 22 92</a>
+          <a href="tel:+4525120166">+45 25 12 01 66</a>
           <a href="mailto:mads@praegstudio.dk">mads@praegstudio.dk</a>
         </div>
         <div className="person">
           <Img fluid={props.data.flemming.childImageSharp.fluid} />
           <h4>Flemming Lind Larsen</h4>
           <em>Arkitekt</em>
-          <a href="tel:+45 23 87 22 92">+45 23 87 22 92</a>
+          <a href="tel:+4520546064">+45 20 54 60 64</a>
           <a href="mailto:flemming@praegstudio.dk">flemming@praegstudio.dk</a>
         </div>
         <div className="person">
