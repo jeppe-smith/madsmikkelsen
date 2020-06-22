@@ -1,7 +1,37 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+// sort: { order: DESC, fields: [frontmatter___date] }
 
-// You can delete this file if you're not using it
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions
+  const projectTemplate = require.resolve(`./src/templates/project.js`)
+  const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: ASC, fields: [frontmatter___order] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.slug,
+      component: projectTemplate,
+      context: {
+        slug: node.frontmatter.slug,
+      },
+    })
+  })
+}

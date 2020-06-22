@@ -1,0 +1,48 @@
+.project-thumbnail {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+
+  .gatsby-image-wrapper {
+    height: 100%;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  img {
+    margin-bottom: 0;
+  }
+}
+
+.project-thumbnail:hover .gatsby-image-wrapper {
+  transform: scale(1.1);
+}
+
+.project-thumbnail__info {
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  opacity: 0;
+  transition: all 0.2s ease;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .project-thumbnail:hover & {
+    opacity: 1;
+  }
+}
+
+.project-thumbnail__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-thumbnail__description {
+  margin: 0;
+}
