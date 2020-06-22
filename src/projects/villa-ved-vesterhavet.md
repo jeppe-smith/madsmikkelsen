@@ -41,6 +41,8 @@ images:
   - "../images/villa-ved-vesterhavet/trappe-tæt.jpg"
   - "../images/villa-ved-vesterhavet/trappe.jpg"
   - "../images/villa-ved-vesterhavet/vinkælder.jpg"
+  - "../images/villa-ved-vesterhavet/vinkælder-trappe.jpg"
+  - "../images/villa-ved-vesterhavet/vinhylde.jpg"
 ---
 
 Med respekt for den oprindelige markante og gennemførte arkitektur fra 1990’erne ønskede bygherre at sætte eget opdaterede præg på villaen. Tidstypiske elementer som maritime trapper, poolrum, køkkenalrum, badeværelse og vinkælder har fået et helt nyt og moderne udtryk med elegante detaljer i bl.a. egetræ og natursten, som skaber ny helhed i huset.

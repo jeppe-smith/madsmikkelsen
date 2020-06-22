@@ -12,6 +12,7 @@ tags:
   - "Byg & Design"
   - "Frøslev træ"
 images:
+  - "../images/villa-i-søhøjlandet/skitse.jpg"
   - "../images/villa-i-søhøjlandet/fra-haven.jpg"
   - "../images/villa-i-søhøjlandet/fra-vejen.jpg"
   - "../images/villa-i-søhøjlandet/interiør-gipsloft.jpg"
