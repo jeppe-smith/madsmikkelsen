@@ -1,14 +1,41 @@
-.person-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  margin: 0 auto;
+.contact-page {
   max-width: 1200px;
+  margin: 0 1rem;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+  }
+}
+
+.person-list {
+  @media screen and (min-width: 425px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .person {
   display: flex;
   flex-direction: column;
+  margin-bottom: 4rem;
+  width: calc(50% - 0.5rem);
+
+  &:nth-child(odd) {
+    margin-right: 1rem;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% / 3) - (2rem / 3));
+    margin-right: 1rem;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
 
   .gatsby-image-wrapper {
     margin-bottom: 2rem;

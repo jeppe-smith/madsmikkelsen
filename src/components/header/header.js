@@ -16,45 +16,47 @@ export const Header = () => {
   }, [isMenuOpen])
 
   return (
-    <nav className="container header">
-      <Link to="/">
-        <Logo className="header__logo" />
-      </Link>
-      <div className={`menu ${isMenuOpen ? "is-open" : ""}`}>
-        <Link
-          className="menu__link"
-          onClick={() => setMenuIsOpen(false)}
-          to="/"
-        >
-          Projekter
+    <nav className="header_wrapper">
+      <div className="header">
+        <Link to="/">
+          <Logo className="header__logo" />
         </Link>
-        <Link
-          className="menu__link"
-          to="/boligkøb-i-blinde"
-          onClick={() => setMenuIsOpen(false)}
-        >
-          Boligkøb i Blinde
-        </Link>
-        <Link
-          className="menu__link"
-          onClick={() => setMenuIsOpen(false)}
-          to="/kontakt"
-        >
-          Kontakt
-        </Link>
+        <div className={`menu ${isMenuOpen ? "is-open" : ""}`}>
+          <Link
+            className="menu__link"
+            onClick={() => setMenuIsOpen(false)}
+            to="/"
+          >
+            Projekter
+          </Link>
+          <Link
+            className="menu__link"
+            to="/boligkøb-i-blinde"
+            onClick={() => setMenuIsOpen(false)}
+          >
+            Boligkøb i Blinde
+          </Link>
+          <Link
+            className="menu__link"
+            onClick={() => setMenuIsOpen(false)}
+            to="/kontakt"
+          >
+            Kontakt
+          </Link>
+        </div>
+        {!isMenuOpen && (
+          <MenuIcon
+            className="header__menu-toggle"
+            onClick={() => setMenuIsOpen(true)}
+          />
+        )}
+        {isMenuOpen && (
+          <CloseIcon
+            className="header__menu-toggle"
+            onClick={() => setMenuIsOpen(false)}
+          />
+        )}
       </div>
-      {!isMenuOpen && (
-        <MenuIcon
-          className="header__menu-toggle"
-          onClick={() => setMenuIsOpen(true)}
-        />
-      )}
-      {isMenuOpen && (
-        <CloseIcon
-          className="header__menu-toggle"
-          onClick={() => setMenuIsOpen(false)}
-        />
-      )}
     </nav>
   )
 }

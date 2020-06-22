@@ -1,8 +1,10 @@
 .tv-project {
   margin-bottom: 2rem;
+  padding: 0 1rem;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 4rem;
+    padding: 0;
   }
 }
 

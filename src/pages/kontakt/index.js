@@ -55,8 +55,8 @@ const ContactPage = props => (
           dette til arkitektoniske, brugbare og langtidsholdbare løsninger af
           høj kvalitet. Tegnestuen som er i stadig vækst, har i dag 4 ansatte og
           byggeopgaver over hele landet. Mads Mikkelsen har udover, at drive
-          tegnestuen, medvirket som ”arkitekt/ekspert” i boligprogrammet
-          “Boligkøb i blinde“.
+          tegnestuen, medvirket som "arkitekt/ekspert" i boligprogrammet
+          "Boligkøb i blinde".
         </p>
         <p>
           <span>Ballevej 1C, 8600 Silkeborg</span> |{" "}

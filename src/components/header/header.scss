@@ -1,8 +1,13 @@
+.header_wrapper {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 3rem;
+}
+
 .header {
   max-width: 1200px;
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 
   // @media only screen and (min-width: 768px) {
   //   flex-direction: column;
@@ -16,7 +21,6 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: 2rem;
-    margin-bottom: 5rem;
   }
 
   @media screen and (min-width: 1200px) {
@@ -46,7 +50,7 @@
 }
 
 .header__menu-toggle {
-  margin-left: 1rem;
+  margin-left: auto;
   position: relative;
   z-index: 10;
 
