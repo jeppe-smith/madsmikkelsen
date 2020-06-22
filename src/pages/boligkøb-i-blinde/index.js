@@ -120,24 +120,24 @@ const TVPage = props => {
           </p>
         </PageTitle>
         <TVProject
-          title="Charlotte og Martin i Bjæverskov"
-          images={props.data.cm.edges.map(edge => edge.node)}
-        />
-        <TVProject
-          title="Molly og Morten i Silkeborg"
-          images={props.data.mm.edges.map(edge => edge.node)}
+          title="Sonja og Emil i Rødovre"
+          images={props.data.se.edges.map(edge => edge.node)}
         />
         <TVProject
           title="Pernille og Søren i Stensballe, Horsens"
           images={props.data.ps.edges.map(edge => edge.node)}
         />
         <TVProject
-          title="Sonja og Emil i Rødovre"
-          images={props.data.se.edges.map(edge => edge.node)}
-        />
-        <TVProject
           title="Wendy og Jesper i Kalundborg"
           images={props.data.wj.edges.map(edge => edge.node)}
+        />
+        <TVProject
+          title="Molly og Morten i Silkeborg"
+          images={props.data.mm.edges.map(edge => edge.node)}
+        />
+        <TVProject
+          title="Charlotte og Martin i Bjæverskov"
+          images={props.data.cm.edges.map(edge => edge.node)}
         />
       </div>
     </Layout>
