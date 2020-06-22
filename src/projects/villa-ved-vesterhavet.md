@@ -43,4 +43,4 @@ images:
   - "../images/villa-ved-vesterhavet/vinkælder.jpg"
 ---
 
-Med unikke solnedgange genspejlet i søen er villaen placeret længst muligt væk fra søbredden, anonymt og privat. Samspillet med naturen understreges med lodrette træbeklædninger i en varm transparent mørk brunsort lød, som bokse af træ i forskellige former og størrelser, som giver variation og dybder til facaden. Indvendigt afspejler forskudte plan også den omkringliggende natur.
+Med respekt for den oprindelige markante og gennemførte arkitektur fra 1990’erne ønskede bygherre at sætte eget opdaterede præg på villaen. Tidstypiske elementer som maritime trapper, poolrum, køkkenalrum, badeværelse og vinkælder har fået et helt nyt og moderne udtryk med elegante detaljer i bl.a. egetræ og natursten, som skaber ny helhed i huset.
