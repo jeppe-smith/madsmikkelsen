@@ -2,7 +2,7 @@
 slug: "/villa-i-ikast"
 order: 10
 title: "Villa i Ikast"
-description: "Ombygning af 1. sal i privat villa… -som aldrig var taget i brug"
+description: "Ombygning af 1. sal i privat villa - som aldrig var taget i brug"
 thumbnail: "../images/villa-i-ikast/gennemgang.jpg"
 images:
   - "../images/villa-i-ikast/stue.jpg"
@@ -14,4 +14,4 @@ images:
   - "../images/villa-i-ikast/stue-udsigt.jpg"
 ---
 
-For at skabe rum og rumfornemmelse i en stue med tilhørende forældreafdeling på 1. sal, er loftet løftet og tilføjet en ny volumen med loftsbjælker og integreret indirekte belysning. Bjælker i egetræ fra lokalt savværk blev røget i bygherrers garage for at opnå den helt rigtige nuance af let røget eg, der fungerer som klassiske og eksklusiv åben bjælkekonstruktion.
+For at skabe rum og rumfornemmelse i en stue med tilhørende forældreafdeling på 1. sal, er loftet løftet og tilføjet en ny volumen med loftsbjælker og integreret indirekte belysning. Bjælker i egetræ fra lokalt savværk blev røget i bygherrers garage, for at tone egetræet til den helt rigtige nuance.
