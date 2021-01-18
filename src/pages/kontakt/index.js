@@ -38,6 +38,16 @@ export const pageQuery = graphql`
         }
       }
     }
+    dorian: file(
+      relativePath: { eq: "people/dorian-bw.jpg" }
+      sourceInstanceName: { eq: "images" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -88,9 +98,16 @@ const ContactPage = props => (
         <div className="person">
           <Img fluid={props.data.martin.childImageSharp.fluid} />
           <h4>Martin Elnegaard Hansen</h4>
-          <em>BA. Architect, tømrer</em>
+          <em>BA. Architect</em>
           <a href="tel:+4530286256">+45 30 28 62 56</a>
           <a href="mailto:martin@praegstudio.dk">martin@praegstudio.dk</a>
+        </div>
+        <div className="person">
+          <Img fluid={props.data.dorian.childImageSharp.fluid} />
+          <h4>Dorian Wattez</h4>
+          <em>Bygningskonstruktør / Constructing Architect</em>
+          <a href="tel:+4522153191">+45 22 15 31 91</a>
+          <a href="mailto:martin@praegstudio.dk">dorian@praegstudio.dk</a>
         </div>
       </div>
     </div>
