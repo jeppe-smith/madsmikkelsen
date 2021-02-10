@@ -3,10 +3,28 @@ footer {
   padding: 4rem 0;
   border-top: 1px solid #eee;
   text-align: center;
+  position: relative;
 
   a,
   span {
     color: inherit;
     margin: 0 1rem;
+  }
+}
+
+.designer {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.875rem;
+  color: lightslategrey;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  &__icon {
+    width: 1rem;
+    margin-left: 0.5rem;
   }
 }
