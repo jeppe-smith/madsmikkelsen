@@ -107,7 +107,7 @@ const ContactPage = props => (
           <h4>Dorian Wattez</h4>
           <em>Bygningskonstruktør / Constructing Architect</em>
           <a href="tel:+4522153191">+45 22 15 31 91</a>
-          <a href="mailto:martin@praegstudio.dk">dorian@praegstudio.dk</a>
+          <a href="mailto:dorian@praegstudio.dk">dorian@praegstudio.dk</a>
         </div>
       </div>
     </div>
