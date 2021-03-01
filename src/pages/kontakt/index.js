@@ -109,6 +109,13 @@ const ContactPage = props => (
           <a href="tel:+4522153191">+45 22 15 31 91</a>
           <a href="mailto:dorian@praegstudio.dk">dorian@praegstudio.dk</a>
         </div>
+        <div className="person">
+          <div className="person__placeholder"></div>
+          <h4>Kathrine Grundahl Hansen</h4>
+          <em>Arkitekt, Cand.arch.</em>
+          <a href="tel:+4522153191">+45 60 62 86 67</a>
+          <a href="mailto:kathrine@praegstudio.dk">kathrine@praegstudio.dk</a>
+        </div>
       </div>
     </div>
   </Layout>
