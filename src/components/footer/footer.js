@@ -8,6 +8,7 @@ export const Footer = props => (
       <span>Ballevej 1C, 8600 Silkeborg</span>
       <a href="tel:+4525120166">+45 25 12 01 66</a>
       <a href="mailto:mads@praegstudio.dk">info@praegstudio.dk</a>
+      <span>CVR: 36979798</span>
     </div>
     <a href="https://jeppesmith.dk" target="_blank" className="designer">
       Design og udvikling af jeppesmith.dk
