@@ -48,8 +48,20 @@ export const pageQuery = graphql`
         }
       }
     }
+    kathrine: file(
+      relativePath: { eq: "people/kathrine.jpg" }
+      sourceInstanceName: { eq: "images" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 400, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
+
+const aspectRatio = 10 / 14
 
 const ContactPage = props => (
   <Layout>
@@ -82,35 +94,65 @@ const ContactPage = props => (
       </PageTitle>
       <div className="person-list">
         <div className="person">
-          <Img fluid={props.data.mads.childImageSharp.fluid} />
+          <Img
+            fluid={props.data.mads.childImageSharp.fluid}
+            sizes={{
+              ...props.data.mads.childImageSharp.fluid,
+              aspectRatio,
+            }}
+          />
           <h4>Mads Kappel Mikkelsen</h4>
           <em>Arkitekt, ejer</em>
           <a href="tel:+4525120166">+45 25 12 01 66</a>
           <a href="mailto:mads@praegstudio.dk">mads@praegstudio.dk</a>
         </div>
         <div className="person">
-          <Img fluid={props.data.flemming.childImageSharp.fluid} />
+          <Img
+            fluid={props.data.flemming.childImageSharp.fluid}
+            sizes={{
+              ...props.data.flemming.childImageSharp.fluid,
+              aspectRatio,
+            }}
+          />
           <h4>Flemming Lind Larsen</h4>
           <em>Arkitekt</em>
           <a href="tel:+4520546064">+45 20 54 60 64</a>
           <a href="mailto:flemming@praegstudio.dk">flemming@praegstudio.dk</a>
         </div>
         <div className="person">
-          <Img fluid={props.data.martin.childImageSharp.fluid} />
+          <Img
+            fluid={props.data.martin.childImageSharp.fluid}
+            sizes={{
+              ...props.data.martin.childImageSharp.fluid,
+              aspectRatio,
+            }}
+          />
           <h4>Martin Elnegaard Hansen</h4>
           <em>BA. Architect</em>
           <a href="tel:+4530286256">+45 30 28 62 56</a>
           <a href="mailto:martin@praegstudio.dk">martin@praegstudio.dk</a>
         </div>
         <div className="person">
-          <Img fluid={props.data.dorian.childImageSharp.fluid} />
+          <Img
+            fluid={props.data.dorian.childImageSharp.fluid}
+            sizes={{
+              ...props.data.dorian.childImageSharp.fluid,
+              aspectRatio,
+            }}
+          />
           <h4>Dorian Wattez</h4>
           <em>Bygningskonstruktør / Constructing Architect</em>
           <a href="tel:+4522153191">+45 22 15 31 91</a>
           <a href="mailto:dorian@praegstudio.dk">dorian@praegstudio.dk</a>
         </div>
         <div className="person">
-          <div className="person__placeholder"></div>
+          <Img
+            fluid={props.data.kathrine.childImageSharp.fluid}
+            sizes={{
+              ...props.data.kathrine.childImageSharp.fluid,
+              aspectRatio,
+            }}
+          />
           <h4>Kathrine Grundahl Hansen</h4>
           <em>Arkitekt, Cand.arch.</em>
           <a href="tel:+4522153191">+45 60 62 86 67</a>
