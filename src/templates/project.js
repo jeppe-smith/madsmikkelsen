@@ -56,7 +56,7 @@ export default function Template({ data }) {
             }
 
             const orientation = getOrientation(
-              image.childImageSharp.fluid.aspectRatio
+              image.childImageSharp.gatsbyImageData.aspectRatio
             )
             const aspectRatio = orientation === "landscape" ? 4 / 3 : 4 / 6
 
@@ -70,10 +70,16 @@ export default function Template({ data }) {
                 }}
               >
                 <ImgWithOrient
+                  alt={frontmatter.title}
                   key={index}
-                  fluid={image.childImageSharp.fluid}
-                  sizes={{ ...image.childImageSharp.fluid, aspectRatio }}
-                  aspectRatio={image.childImageSharp.fluid.aspectRatio}
+                  image={image.childImageSharp.gatsbyImageData}
+                  sizes={{
+                    ...image.childImageSharp.gatsbyImageData,
+                    aspectRatio,
+                  }}
+                  aspectRatio={
+                    image.childImageSharp.gatsbyImageData.aspectRatio
+                  }
                 />
               </div>
             )
@@ -104,11 +110,7 @@ export const pageQuery = graphql`
         description
         images {
           childImageSharp {
-            fluid(maxWidth: 1920) {
-              aspectRatio
-              presentationWidth
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
           }
         }
       }

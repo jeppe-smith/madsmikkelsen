@@ -19,9 +19,7 @@ export const pageQuery = graphql`
         node {
           id
           childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 400, height: 300, layout: CONSTRAINED)
           }
         }
       }
@@ -36,9 +34,7 @@ export const pageQuery = graphql`
         node {
           id
           childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 400, height: 300, layout: CONSTRAINED)
           }
         }
       }
@@ -53,9 +49,7 @@ export const pageQuery = graphql`
         node {
           id
           childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 400, height: 300, layout: CONSTRAINED)
           }
         }
       }
@@ -70,9 +64,7 @@ export const pageQuery = graphql`
         node {
           id
           childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 400, height: 300, layout: CONSTRAINED)
           }
         }
       }
@@ -87,9 +79,7 @@ export const pageQuery = graphql`
         node {
           id
           childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 400, height: 300, layout: CONSTRAINED)
           }
         }
       }

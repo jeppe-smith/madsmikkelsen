@@ -1,95 +1,62 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 export const images = graphql`
-  query {
+  {
     image4078: file(relativePath: { eq: "_DSC4078.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          aspectRatio
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 400, placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
     image4082: file(relativePath: { eq: "_DSC4082.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          aspectRatio
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 400, placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
     image4092: file(relativePath: { eq: "_DSC4092.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          aspectRatio
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 400, placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
     image4107: file(relativePath: { eq: "_DSC4107.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          aspectRatio
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 400, placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
     image4109: file(relativePath: { eq: "_DSC4109.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          aspectRatio
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 400, placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
     image4111: file(relativePath: { eq: "_DSC4111.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          aspectRatio
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 400, placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
     image4115: file(relativePath: { eq: "_DSC4115.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          aspectRatio
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 400, placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
     image4116: file(relativePath: { eq: "_DSC4116.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          aspectRatio
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 400, placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
     image4118: file(relativePath: { eq: "_DSC4118.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          aspectRatio
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 400, placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
     image4120: file(relativePath: { eq: "_DSC4120.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          aspectRatio
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 400, placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
     image4124: file(relativePath: { eq: "_DSC4124.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          aspectRatio
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 400, placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
   }
@@ -110,7 +77,9 @@ export const ImgWithOrient = ({ aspectRatio, className, ...props }) => {
     className = orientation
   }
 
-  return <Img className={className} {...props} />
+  return (
+    <GatsbyImage className={className} image={props.image} alt={props.alt} />
+  )
 }
 
 export const Image4078 = () => {
@@ -118,8 +87,8 @@ export const Image4078 = () => {
 
   return (
     <ImgWithOrient
-      aspectRatio={data.image4078.childImageSharp.fluid.aspectRatio}
-      fluid={data.image4078.childImageSharp.fluid}
+      aspectRatio={data.image4078.childImageSharp.gatsbyImageData.aspectRatio}
+      fluid={data.image4078.childImageSharp.gatsbyImageData}
     />
   )
 }
@@ -129,8 +98,8 @@ export const Image4082 = () => {
 
   return (
     <ImgWithOrient
-      aspectRatio={data.image4082.childImageSharp.fluid.aspectRatio}
-      fluid={data.image4082.childImageSharp.fluid}
+      aspectRatio={data.image4082.childImageSharp.gatsbyImageData.aspectRatio}
+      fluid={data.image4082.childImageSharp.gatsbyImageData}
     />
   )
 }
@@ -140,8 +109,8 @@ export const Image4092 = () => {
 
   return (
     <ImgWithOrient
-      aspectRatio={data.image4092.childImageSharp.fluid.aspectRatio}
-      fluid={data.image4092.childImageSharp.fluid}
+      aspectRatio={data.image4092.childImageSharp.gatsbyImageData.aspectRatio}
+      fluid={data.image4092.childImageSharp.gatsbyImageData}
     />
   )
 }
@@ -151,8 +120,8 @@ export const Image4107 = () => {
 
   return (
     <ImgWithOrient
-      aspectRatio={data.image4107.childImageSharp.fluid.aspectRatio}
-      fluid={data.image4107.childImageSharp.fluid}
+      aspectRatio={data.image4107.childImageSharp.gatsbyImageData.aspectRatio}
+      fluid={data.image4107.childImageSharp.gatsbyImageData}
     />
   )
 }
@@ -162,8 +131,8 @@ export const Image4109 = () => {
 
   return (
     <ImgWithOrient
-      aspectRatio={data.image4109.childImageSharp.fluid.aspectRatio}
-      fluid={data.image4109.childImageSharp.fluid}
+      aspectRatio={data.image4109.childImageSharp.gatsbyImageData.aspectRatio}
+      fluid={data.image4109.childImageSharp.gatsbyImageData}
     />
   )
 }
@@ -173,8 +142,8 @@ export const Image4111 = () => {
 
   return (
     <ImgWithOrient
-      aspectRatio={data.image4111.childImageSharp.fluid.aspectRatio}
-      fluid={data.image4111.childImageSharp.fluid}
+      aspectRatio={data.image4111.childImageSharp.gatsbyImageData.aspectRatio}
+      fluid={data.image4111.childImageSharp.gatsbyImageData}
     />
   )
 }
@@ -184,8 +153,8 @@ export const Image4115 = () => {
 
   return (
     <ImgWithOrient
-      aspectRatio={data.image4115.childImageSharp.fluid.aspectRatio}
-      fluid={data.image4115.childImageSharp.fluid}
+      aspectRatio={data.image4115.childImageSharp.gatsbyImageData.aspectRatio}
+      fluid={data.image4115.childImageSharp.gatsbyImageData}
     />
   )
 }
@@ -195,8 +164,8 @@ export const Image4116 = () => {
 
   return (
     <ImgWithOrient
-      aspectRatio={data.image4116.childImageSharp.fluid.aspectRatio}
-      fluid={data.image4116.childImageSharp.fluid}
+      aspectRatio={data.image4116.childImageSharp.gatsbyImageData.aspectRatio}
+      fluid={data.image4116.childImageSharp.gatsbyImageData}
     />
   )
 }
@@ -206,8 +175,8 @@ export const Image4118 = () => {
 
   return (
     <ImgWithOrient
-      aspectRatio={data.image4118.childImageSharp.fluid.aspectRatio}
-      fluid={data.image4118.childImageSharp.fluid}
+      aspectRatio={data.image4118.childImageSharp.gatsbyImageData.aspectRatio}
+      fluid={data.image4118.childImageSharp.gatsbyImageData}
     />
   )
 }
@@ -217,8 +186,8 @@ export const Image4120 = () => {
 
   return (
     <ImgWithOrient
-      aspectRatio={data.image4120.childImageSharp.fluid.aspectRatio}
-      fluid={data.image4120.childImageSharp.fluid}
+      aspectRatio={data.image4120.childImageSharp.gatsbyImageData.aspectRatio}
+      fluid={data.image4120.childImageSharp.gatsbyImageData}
     />
   )
 }
@@ -228,8 +197,8 @@ export const Image4124 = () => {
 
   return (
     <ImgWithOrient
-      aspectRatio={data.image4124.childImageSharp.fluid.aspectRatio}
-      fluid={data.image4124.childImageSharp.fluid}
+      aspectRatio={data.image4124.childImageSharp.gatsbyImageData.aspectRatio}
+      fluid={data.image4124.childImageSharp.gatsbyImageData}
     />
   )
 }

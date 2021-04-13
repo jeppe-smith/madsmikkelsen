@@ -1,7 +1,7 @@
 import "./styles.scss"
 
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const TVProject = props => (
   <section className="tv-project">
@@ -11,9 +11,9 @@ const TVProject = props => (
     <ul className="tv-project__image-list">
       {props.images.map((image, index) => (
         <li className="tv-project__image-list__item" key={index}>
-          <Img
-            fluid={image.childImageSharp.fluid}
-            sizes={{ ...image.childImageSharp.fluid, aspectRatio: 4 / 3 }}
+          <GatsbyImage
+            alt={props.title}
+            image={image.childImageSharp.gatsbyImageData}
           />
         </li>
       ))}

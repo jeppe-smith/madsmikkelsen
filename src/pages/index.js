@@ -8,7 +8,7 @@ import { Link, graphql } from "gatsby"
 import { getOrientation } from "../utils/getOrientation"
 
 export const pageQuery = graphql`
-  query {
+  {
     allMarkdownRemark(
       sort: { order: ASC, fields: [frontmatter___order] }
       limit: 1000
@@ -22,10 +22,11 @@ export const pageQuery = graphql`
             description
             thumbnail {
               childImageSharp {
-                fluid(maxWidth: 600) {
-                  aspectRatio
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  width: 600
+                  placeholder: BLURRED
+                  layout: CONSTRAINED
+                )
               }
             }
           }
@@ -37,14 +38,15 @@ export const pageQuery = graphql`
 
 const IndexPage = props => (
   <Layout>
-    <SEO />
+    <SEO title="Præg Studio v/ Mads Kappel Mikkelsen" />
     <Gallery>
       {props.data.allMarkdownRemark.edges.map((edge, index) => (
         <Link
           key={index}
           to={edge.node.frontmatter.slug}
           className={`unstyled-link ${getOrientation(
-            edge.node.frontmatter.thumbnail.childImageSharp.fluid.aspectRatio
+            edge.node.frontmatter.thumbnail.childImageSharp.gatsbyImageData
+              .aspectRatio
           )}`}
         >
           <ProjectThumbnail
