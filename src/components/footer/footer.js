@@ -9,7 +9,12 @@ export const Footer = props => (
       <a href="mailto:mads@praegstudio.dk">info@praegstudio.dk</a>
       <span>CVR: 36979798</span>
     </div>
-    <a href="https://jeppesmith.dk" target="_blank" className="designer">
+    <a
+      href="https://jeppesmith.dk"
+      target="_blank"
+      className="designer"
+      rel="noopener noreferrer"
+    >
       Design og udvikling af jeppesmith.dk
       <svg
         className="designer__icon"
