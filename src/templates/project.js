@@ -110,7 +110,11 @@ export const pageQuery = graphql`
         description
         images {
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+            gatsbyImageData(
+              placeholder: BLURRED
+              layout: FULL_WIDTH
+              quality: 60
+            )
           }
         }
       }
