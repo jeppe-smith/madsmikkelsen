@@ -1,22 +1,18 @@
 import React from "react"
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const NonStretchedImage = props => {
-  let normalizedProps = props
-  if (props.fluid && props.fluid.presentationWidth) {
-    normalizedProps = {
-      ...props,
-      style: {
-        ...(props.style || {}),
-        maxWidth: props.fluid.presentationWidth,
-        height: window.innerHeight - 50,
+  return (
+    <GatsbyImage
+      {...props}
+      alt=""
+      imgStyle={{
         width: "auto",
-        margin: "50px auto 0", // Used to center the image
-      },
-    }
-  }
-
-  return <GatsbyImage {...normalizedProps} />;
+        margin: "50px auto 0",
+        height: window.innerHeight - 50,
+      }}
+    />
+  )
 }
 
 export default NonStretchedImage
