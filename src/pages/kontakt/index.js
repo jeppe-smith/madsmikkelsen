@@ -4,53 +4,52 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import PageTitle from "../../components/PageTitle"
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image"
 
-export const pageQuery = graphql`{
-  flemming: file(
-    relativePath: {eq: "people/flemming-bw.jpg"}
-    sourceInstanceName: {eq: "images"}
-  ) {
-    childImageSharp {
-      gatsbyImageData(width: 400, layout: CONSTRAINED)
+export const pageQuery = graphql`
+  {
+    flemming: file(
+      relativePath: { eq: "people/flemming-bw.jpg" }
+      sourceInstanceName: { eq: "images" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(width: 400, aspectRatio: 0.71)
+      }
+    }
+    mads: file(
+      relativePath: { eq: "people/mads-bw.jpg" }
+      sourceInstanceName: { eq: "images" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(width: 400, aspectRatio: 0.71)
+      }
+    }
+    martin: file(
+      relativePath: { eq: "people/martin-bw.jpg" }
+      sourceInstanceName: { eq: "images" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(width: 400, aspectRatio: 0.71)
+      }
+    }
+    dorian: file(
+      relativePath: { eq: "people/dorian-bw.jpg" }
+      sourceInstanceName: { eq: "images" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(width: 400, aspectRatio: 0.71)
+      }
+    }
+    kathrine: file(
+      relativePath: { eq: "people/kathrine.jpg" }
+      sourceInstanceName: { eq: "images" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(width: 400, aspectRatio: 0.71)
+      }
     }
   }
-  mads: file(
-    relativePath: {eq: "people/mads-bw.jpg"}
-    sourceInstanceName: {eq: "images"}
-  ) {
-    childImageSharp {
-      gatsbyImageData(width: 400, layout: CONSTRAINED)
-    }
-  }
-  martin: file(
-    relativePath: {eq: "people/martin-bw.jpg"}
-    sourceInstanceName: {eq: "images"}
-  ) {
-    childImageSharp {
-      gatsbyImageData(width: 400, layout: CONSTRAINED)
-    }
-  }
-  dorian: file(
-    relativePath: {eq: "people/dorian-bw.jpg"}
-    sourceInstanceName: {eq: "images"}
-  ) {
-    childImageSharp {
-      gatsbyImageData(width: 400, layout: CONSTRAINED)
-    }
-  }
-  kathrine: file(
-    relativePath: {eq: "people/kathrine.jpg"}
-    sourceInstanceName: {eq: "images"}
-  ) {
-    childImageSharp {
-      gatsbyImageData(width: 400, quality: 100, layout: CONSTRAINED)
-    }
-  }
-}
 `
-
-const aspectRatio = 10 / 14
 
 const ContactPage = props => (
   <Layout>
@@ -84,11 +83,9 @@ const ContactPage = props => (
       <div className="person-list">
         <div className="person">
           <GatsbyImage
+            alt="Mads Kappel Mikkelsen"
             image={props.data.mads.childImageSharp.gatsbyImageData}
-            sizes={{
-              ...props.data.mads.childImageSharp.gatsbyImageData,
-              aspectRatio,
-            }} />
+          />
           <h4>Mads Kappel Mikkelsen</h4>
           <em>Arkitekt, ejer</em>
           <a href="tel:+4525120166">+45 25 12 01 66</a>
@@ -96,11 +93,9 @@ const ContactPage = props => (
         </div>
         <div className="person">
           <GatsbyImage
+            alt="Flemming Lind Larsen"
             image={props.data.flemming.childImageSharp.gatsbyImageData}
-            sizes={{
-              ...props.data.flemming.childImageSharp.gatsbyImageData,
-              aspectRatio,
-            }} />
+          />
           <h4>Flemming Lind Larsen</h4>
           <em>Arkitekt</em>
           <a href="tel:+4520546064">+45 20 54 60 64</a>
@@ -108,11 +103,9 @@ const ContactPage = props => (
         </div>
         <div className="person">
           <GatsbyImage
+            alt="Martin Elnegaard Hansen"
             image={props.data.martin.childImageSharp.gatsbyImageData}
-            sizes={{
-              ...props.data.martin.childImageSharp.gatsbyImageData,
-              aspectRatio,
-            }} />
+          />
           <h4>Martin Elnegaard Hansen</h4>
           <em>BA. Architect</em>
           <a href="tel:+4530286256">+45 30 28 62 56</a>
@@ -120,11 +113,9 @@ const ContactPage = props => (
         </div>
         <div className="person">
           <GatsbyImage
+            alt="Dorian Wattez"
             image={props.data.dorian.childImageSharp.gatsbyImageData}
-            sizes={{
-              ...props.data.dorian.childImageSharp.gatsbyImageData,
-              aspectRatio,
-            }} />
+          />
           <h4>Dorian Wattez</h4>
           <em>Bygningskonstruktør / Constructing Architect</em>
           <a href="tel:+4522153191">+45 22 15 31 91</a>
@@ -132,11 +123,9 @@ const ContactPage = props => (
         </div>
         <div className="person">
           <GatsbyImage
+            alt="Kathrine Grundahl Hansen"
             image={props.data.kathrine.childImageSharp.gatsbyImageData}
-            sizes={{
-              ...props.data.kathrine.childImageSharp.gatsbyImageData,
-              aspectRatio,
-            }} />
+          />
           <h4>Kathrine Grundahl Hansen</h4>
           <em>Arkitekt, Cand.arch.</em>
           <a href="tel:+4522153191">+45 60 62 86 67</a>
