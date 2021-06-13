@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 export const ImgWithOrient = ({ aspectRatio, className, ...props }) => {
   let orientation = "square"
@@ -17,6 +17,6 @@ export const ImgWithOrient = ({ aspectRatio, className, ...props }) => {
   }
 
   return (
-    <StaticImage className={className} image={props.image} alt={props.alt} />
+    <GatsbyImage className={className} image={props.image} alt={props.alt} />
   )
 }
