@@ -122,21 +122,11 @@ const ContactPage = props => (
           <a href="mailto:dorian@praegstudio.dk">dorian@praegstudio.dk</a>
         </div>
         <div className="person">
-          <GatsbyImage
-            alt="Kathrine Grundahl Hansen"
-            image={props.data.kathrine.childImageSharp.gatsbyImageData}
-          />
-          <h4>Kathrine Grundahl Hansen</h4>
-          <em>Arkitekt, Cand.arch.</em>
-          <a href="tel:+4522153191">+45 60 62 86 67</a>
-          <a href="mailto:kathrine@praegstudio.dk">kathrine@praegstudio.dk</a>
-        </div>
-        <div className="person">
           <div className="person__placeholder"></div>
-          <h4>Stine Toftbjerg</h4>
-          <em>Kontorassistent</em>
-          <a href="tel:+4560159408">+45 60 15 94 08</a>
-          <a href="mailto:stine@praegstudio.dk">stine@praegstudio.dk</a>
+          <h4>Vicki Lundgaard</h4>
+          <em>Arkitekt, Cand.arch.</em>
+          <a href="tel:+4531726770">+45 31 72 67 70</a>
+          <a href="mailto:vicki@praegstudio.dk">vicki@praegstudio.dk</a>
         </div>
       </div>
     </div>
