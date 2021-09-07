@@ -6,11 +6,7 @@ const NonStretchedImage = props => {
     <GatsbyImage
       {...props}
       alt=""
-      imgStyle={{
-        width: "auto",
-        margin: "50px auto 0",
-        height: window.innerHeight - 50,
-      }}
+      style={{ display: "flex", alignItems: "center", height: "100vh" }}
     />
   )
 }
