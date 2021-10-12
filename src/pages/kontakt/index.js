@@ -40,8 +40,16 @@ export const pageQuery = graphql`
         gatsbyImageData(width: 400, aspectRatio: 0.71)
       }
     }
-    kathrine: file(
-      relativePath: { eq: "people/kathrine.jpg" }
+    vicki: file(
+      relativePath: { eq: "people/vicki.jpg" }
+      sourceInstanceName: { eq: "images" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(width: 400, aspectRatio: 0.71)
+      }
+    }
+    frank: file(
+      relativePath: { eq: "people/frank.jpg" }
       sourceInstanceName: { eq: "images" }
     ) {
       childImageSharp {
@@ -69,7 +77,7 @@ const ContactPage = props => (
           funktionelle og langtidsholdbare løsninger af høj kvalitet.
         </p>
         <p>
-          Tegnestuen som er i stadig vækst, har i dag 4 ansatte og byggeopgaver
+          Tegnestuen som er i stadig vækst, har i dag 6 ansatte og byggeopgaver
           over hele landet. Mads Mikkelsen har udover at drive tegnestuen,
           medvirket som ”arkitekt/ekspert” i boligprogrammet “Boligkøb i
           blinde“.
@@ -122,11 +130,24 @@ const ContactPage = props => (
           <a href="mailto:dorian@praegstudio.dk">dorian@praegstudio.dk</a>
         </div>
         <div className="person">
-          <div className="person__placeholder"></div>
+          <GatsbyImage
+            alt="Vicki Lundgaard"
+            image={props.data.vicki.childImageSharp.gatsbyImageData}
+          />
           <h4>Vicki Lundgaard</h4>
           <em>Arkitekt, Cand.arch.</em>
           <a href="tel:+4531726770">+45 31 72 67 70</a>
           <a href="mailto:vicki@praegstudio.dk">vicki@praegstudio.dk</a>
+        </div>
+        <div className="person">
+          <GatsbyImage
+            alt="Frank Schmidt"
+            image={props.data.frank.childImageSharp.gatsbyImageData}
+          />
+          <h4>Frank Schmidt</h4>
+          <em>Bygningskonstruktør BTH</em>
+          {/* <a href="tel:+4531726770">+45 31 72 67 70</a> */}
+          <a href="mailto:frank@praegstudio.dk">frank@praegstudio.dk</a>
         </div>
       </div>
     </div>
