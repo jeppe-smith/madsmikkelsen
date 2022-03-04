@@ -106,7 +106,6 @@ const ContactPage = props => (
           />
           <h4>Flemming Lind Larsen</h4>
           <em>Arkitekt</em>
-          <a href="tel:+4520546064">+45 20 54 60 64</a>
           <a href="mailto:flemming@praegstudio.dk">flemming@praegstudio.dk</a>
         </div>
         <div className="person">
@@ -126,7 +125,7 @@ const ContactPage = props => (
           />
           <h4>Dorian Wattez</h4>
           <em>Bygningskonstruktør / Constructing Architect</em>
-          <a href="tel:+4522153191">+45 22 15 31 91</a>
+          <a href="tel:+45222512130">+45 22 51 21 30</a>
           <a href="mailto:dorian@praegstudio.dk">dorian@praegstudio.dk</a>
         </div>
         <div className="person">
@@ -146,7 +145,7 @@ const ContactPage = props => (
           />
           <h4>Frank Schmidt</h4>
           <em>Bygningskonstruktør BTH</em>
-          {/* <a href="tel:+4531726770">+45 31 72 67 70</a> */}
+          <a href="tel:+4525325003">+4531726770</a>
           <a href="mailto:frank@praegstudio.dk">frank@praegstudio.dk</a>
         </div>
       </div>
