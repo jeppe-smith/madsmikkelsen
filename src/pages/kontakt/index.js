@@ -145,8 +145,15 @@ const ContactPage = props => (
           />
           <h4>Frank Schmidt</h4>
           <em>Bygningskonstruktør BTH</em>
-          <a href="tel:+4525325003">+4531726770</a>
+          <a href="tel:+4525325003">+45 25 32 50 03</a>
           <a href="mailto:frank@praegstudio.dk">frank@praegstudio.dk</a>
+        </div>
+        <div className="person">
+          <div className="person__placeholder" />
+          <h4>Anja Kristina Koldby Jensen</h4>
+          <em>Arkitekt, Cand.arch.</em>
+          {/* <a href="tel:+4525325003">+45 25 32 50 03</a> */}
+          <a href="mailto:anja@praegstudio.dk">anja@praegstudio.dk</a>
         </div>
       </div>
     </div>
