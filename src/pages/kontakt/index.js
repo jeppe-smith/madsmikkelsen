@@ -56,6 +56,22 @@ export const pageQuery = graphql`
         gatsbyImageData(width: 400, aspectRatio: 0.71)
       }
     }
+    anja: file(
+      relativePath: { eq: "people/anja.jpg" }
+      sourceInstanceName: { eq: "images" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(width: 400, aspectRatio: 0.71)
+      }
+    }
+    christine: file(
+      relativePath: { eq: "people/christine.jpg" }
+      sourceInstanceName: { eq: "images" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(width: 400, aspectRatio: 0.71)
+      }
+    }
   }
 `
 
@@ -77,9 +93,9 @@ const ContactPage = props => (
           funktionelle og langtidsholdbare løsninger af høj kvalitet.
         </p>
         <p>
-          Tegnestuen som er i stadig vækst, har i dag 6 ansatte og byggeopgaver
+          Tegnestuen som er i stadig vækst, har i dag 7 ansatte og byggeopgaver
           over hele landet. Mads Mikkelsen har udover at drive tegnestuen,
-          medvirket som ”arkitekt/ekspert” i boligprogrammet “Boligkøb i
+          medvirker som ”arkitekt/ekspert” i boligprogrammet “Boligkøb i
           blinde“.
         </p>
         <p>
@@ -149,11 +165,24 @@ const ContactPage = props => (
           <a href="mailto:frank@praegstudio.dk">frank@praegstudio.dk</a>
         </div>
         <div className="person">
-          <div className="person__placeholder" />
+          <GatsbyImage
+            alt="Anja Kristina Koldby Jensen"
+            image={props.data.anja.childImageSharp.gatsbyImageData}
+          />
           <h4>Anja Kristina Koldby Jensen</h4>
           <em>Arkitekt, Cand.arch.</em>
           {/* <a href="tel:+4525325003">+45 25 32 50 03</a> */}
           <a href="mailto:anja@praegstudio.dk">anja@praegstudio.dk</a>
+        </div>
+        <div className="person">
+          <GatsbyImage
+            alt="Christine Larsen"
+            image={props.data.christine.childImageSharp.gatsbyImageData}
+          />
+          <h4>Christine Larsen</h4>
+          <em>Administration- og marketingassistent</em>
+          {/* <a href="tel:+4525325003">+45 25 32 50 03</a> */}
+          <a href="mailto:christine@praegstudio.dk">christine@praegstudio.dk</a>
         </div>
       </div>
     </div>
