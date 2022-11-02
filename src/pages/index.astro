@@ -1,0 +1,31 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+import Layout from "../layouts/Layout.astro";
+import hero from "../assets/hero.webp";
+import Header from "../components/Header.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <div class="min-h-screen flex flex-col">
+    <Header />
+    <main class="flex-1 relative">
+      <Image
+        src={hero}
+        alt="descriptive text"
+        class="absolute inset-0 h-full object-cover"
+      />
+    </main>
+    <footer
+      class="h-24 flex justify-between items-center dark:text-gray-300 text-xs font-light"
+    >
+      <div class="text-left">
+        <p>Ballevej 1C, 8600 Silkeborg</p>
+        <p>CVR 36979798</p>
+      </div>
+      <div class="text-right">
+        <a class="block">+45 25 12 01 66</a>
+        <a>info@praegstudio.dk</a>
+      </div>
+    </footer>
+  </div>
+</Layout>
